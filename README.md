@@ -4,7 +4,7 @@ Highly customizable, easy-to-use, and minimal terminal styled website template, 
 
 Building a simple website with LiveTerm only takes **minutes**, and you only need to work with **one** file: `config.json`. After you cloned this repository, simply run `yarn install && yarn dev` and start editing `config.json` to build your website!
 
-Shoutout to ![Liveterm](https://liveterm.vercel.app/) which made this possible!
+Shoutout to [Liveterm](https://liveterm.vercel.app/) which made this possible!
 
 ## 🚀 Ship SG VERSE site in less than 5 minutes
 
@@ -66,6 +66,6 @@ The easiest way to deploy a Next.js app is to use the [Vercel Platform](https://
 
 ## Credit
 
-Again Shoutout to ![Liveterm](https://liveterm.vercel.app/) for this amazing piece of work!
+Again Shoutout to [Liveterm](https://liveterm.vercel.app/) for this amazing piece of work!
 
 Based on M4TT72's awesome [Terminal](https://github.com/m4tt72/terminal).
