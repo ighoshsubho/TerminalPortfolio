@@ -155,7 +155,7 @@ export const sudo = async (args?: string[]): Promise<string> => {
 export const banner = (args?: string[]): string => {
   return `
   
-  <div style="display: flex; flex-direction: column; align-items: center;">
+  <div class="container" style="display: inline-flex; align-items: center;">
   <img class="rounded" width="180px" src=${headshot.src} style="margin-right: 2em; margin-bottom:2em">
   <pre>
     ███████╗██╗   ██╗██████╗ ██╗  ██╗ ██████╗      ██████╗ ██╗  ██╗ ██████╗ ███████╗██╗  ██╗
@@ -165,7 +165,16 @@ export const banner = (args?: string[]): string => {
     ███████║╚██████╔╝██████╔╝██║  ██║╚██████╔╝    ╚██████╔╝██║  ██║╚██████╔╝███████║██║  ██║
     ╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝      ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝
   </pre>
-  </div>                                                                                          
+  </div>
+  <style>
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      justify-content: center;
+      text-align: left;
+    }
+  }
+  </style>                                                                                          
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display summary.
 Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
