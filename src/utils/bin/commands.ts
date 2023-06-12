@@ -155,8 +155,8 @@ export const sudo = async (args?: string[]): Promise<string> => {
 export const banner = (args?: string[]): string => {
   return `
   
-  <div class="container" style="display: inline-flex; align-items: center;">
-  <img class="rounded" width="180px" src=${headshot.src} style="margin-right: 2em; margin-bottom:2em">
+  <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+  <img class=".image-container rounded" width="180px" src=${headshot.src} style="margin-right: 2em; margin-bottom:2em">
   <pre>
     ███████╗██╗   ██╗██████╗ ██╗  ██╗ ██████╗      ██████╗ ██╗  ██╗ ██████╗ ███████╗██╗  ██╗
     ██╔════╝██║   ██║██╔══██╗██║  ██║██╔═══██╗    ██╔════╝ ██║  ██║██╔═══██╗██╔════╝██║  ██║
@@ -167,13 +167,17 @@ export const banner = (args?: string[]): string => {
   </pre>
   </div>
   <style>
-  @media (min-width: 768px) {
-    .container {
-      flex-direction: row;
-      justify-content: center;
-      text-align: left;
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+      }
+      .image-container {
+        margin-bottom: 0;
+        margin-right: 20px;
+      }
     }
-  }
   </style>                                                                                          
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display summary.
