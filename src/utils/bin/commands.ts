@@ -154,31 +154,15 @@ export const sudo = async (args?: string[]): Promise<string> => {
 // Banner
 export const banner = (args?: string[]): string => {
   return `
-  
-  <div class="container" style="display: flex; flex-direction: column; align-items: center;">
-  <img class=".image-container rounded" width="180px" src=${headshot.src} style="margin-right: 2em; margin-bottom:2em">
-  <pre>
-    ███████╗██╗   ██╗██████╗ ██╗  ██╗ ██████╗      ██████╗ ██╗  ██╗ ██████╗ ███████╗██╗  ██╗
-    ██╔════╝██║   ██║██╔══██╗██║  ██║██╔═══██╗    ██╔════╝ ██║  ██║██╔═══██╗██╔════╝██║  ██║
-    ███████╗██║   ██║██████╔╝███████║██║   ██║    ██║  ███╗███████║██║   ██║███████╗███████║
-    ╚════██║██║   ██║██╔══██╗██╔══██║██║   ██║    ██║   ██║██╔══██║██║   ██║╚════██║██╔══██║
-    ███████║╚██████╔╝██████╔╝██║  ██║╚██████╔╝    ╚██████╔╝██║  ██║╚██████╔╝███████║██║  ██║
-    ╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝      ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝
-  </pre>
-  </div>
-  <style>
-    @media (min-width: 768px) {
-      .container {
-        flex-direction: row;
-        justify-content: center;
-        text-align: left;
-      }
-      .image-container {
-        margin-bottom: 0;
-        margin-right: 20px;
-      }
-    }
-  </style>                                                                                          
+  <div style="display: inline-flex; flex-direction: column;">
+  <img class="rounded " width="180px" src=${headshot.src} style="margin-left: 1em; margin-bottom: 2em">
+  ███████╗██╗   ██╗██████╗ ██╗  ██╗ ██████╗      ██████╗ ██╗  ██╗ ██████╗ ███████╗██╗  ██╗
+  ██╔════╝██║   ██║██╔══██╗██║  ██║██╔═══██╗    ██╔════╝ ██║  ██║██╔═══██╗██╔════╝██║  ██║
+  ███████╗██║   ██║██████╔╝███████║██║   ██║    ██║  ███╗███████║██║   ██║███████╗███████║
+  ╚════██║██║   ██║██╔══██╗██╔══██║██║   ██║    ██║   ██║██╔══██║██║   ██║╚════██║██╔══██║
+  ███████║╚██████╔╝██████╔╝██║  ██║╚██████╔╝    ╚██████╔╝██║  ██║╚██████╔╝███████║██║  ██║
+  ╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝      ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝
+  </div>                                                                                         
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display summary.
 Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
